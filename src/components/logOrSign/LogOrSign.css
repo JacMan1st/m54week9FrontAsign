@@ -5,7 +5,7 @@ body {
 .logorsign-wrapper {
   width: 100%;
   height: 40%;
-  border: 2px solid rgba(255, 0, 0, 0);
+  /* border: 2px solid rgba(255, 0, 0, 0.949); */
   display: flex;
   align-items: center;
   justify-content: space-evenly;

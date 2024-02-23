@@ -2,18 +2,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  /* background-image: url("./images/vintagewall.jpg");
+  background-position: center;
+  background-size: cover; */
   background-color: beige;
 }
-/* 
-.wrapper {
-  width: 80%;
-  height: 80vh;
-  border: 1px solid rgba(255, 0, 0, 0);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-} */
 
 .success-popup {
   position: fixed;

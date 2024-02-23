@@ -20,6 +20,8 @@ const Login = ({ setLoggedIn }) => {
       if (data && data.user.id && data.user.username) {
         setShowPopup(true);
         setLoggedIn(true);
+        setUsername("");
+        setPassword("");
       } else {
         console.log("unexpected: ", data);
         console.log("ID: ", data.user.id);

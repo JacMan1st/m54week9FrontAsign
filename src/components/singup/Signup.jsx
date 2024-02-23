@@ -15,6 +15,9 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setShowPopup(true);
+    setUsername("");
+    setEmail("");
+    setPassword("");
     console.log("signup complete");
     await signup(username, email, password);
   };

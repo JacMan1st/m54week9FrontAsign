@@ -55,7 +55,11 @@ const Login = ({ setLoggedIn }) => {
       </form>
       {showPopup && (
         <div className="success-popup">
-          <p>Login Successful!</p>
+          <p>
+            Login Successful!
+            <br />
+            Welcome back {username}
+          </p>
           <button onClick={closePopup}>Close</button>
         </div>
       )}

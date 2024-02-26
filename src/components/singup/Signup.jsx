@@ -7,7 +7,7 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   const [showPopup, setShowPopup] = useState(false);
 
-  const changeHander = (e, setter, state) => {
+  const changeHandler = (e, setter, state) => {
     setter(e.target.value);
     console.log(state);
   };
@@ -15,9 +15,6 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setShowPopup(true);
-    setUsername("");
-    setEmail("");
-    setPassword("");
     console.log("signup complete");
     await signup(username, email, password);
   };
@@ -32,22 +29,26 @@ const Signup = () => {
         <h3>Signup</h3>
         <input
           placeholder="Username"
-          onChange={(e) => changeHander(e, setUsername, username)}
+          onChange={(e) => changeHandler(e, setUsername, username)}
         />
         <input
           placeholder="email"
-          onChange={(e) => changeHander(e, setEmail, email)}
+          onChange={(e) => changeHandler(e, setEmail, email)}
         />
         <input
           type="password"
           placeholder="password"
-          onChange={(e) => changeHander(e, setPassword, password)}
+          onChange={(e) => changeHandler(e, setPassword, password)}
         />
         <button type="submit">Signup</button>
       </form>
       {showPopup && (
         <div className="success-popup">
-          <p>Login Successful!</p>
+          <p>
+            Signup Successful! Welcome {username}
+            <br />
+            We hope you enjoy The Classic Car Club
+          </p>
           <button onClick={closePopup}>Close</button>
         </div>
       )}

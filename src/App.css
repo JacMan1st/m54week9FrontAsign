@@ -2,10 +2,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-image: url("./images/vintagewall.jpg");
+  background-image: url("./images/wallnroad.jpg");
   background-position: center;
-  background-size: cover; */
-  background-color: beige;
+  background-size: cover;
 }
 
 .success-popup {
@@ -17,7 +16,7 @@ body {
   border-radius: 5px;
   padding: 20px;
   transform: translate(-50%, -50%);
-  z-index: 5;
+  z-index: 999;
 }
 
 .success-popup p {
